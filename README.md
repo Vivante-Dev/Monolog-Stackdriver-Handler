@@ -3,25 +3,14 @@ Monolog Handler Structured Logging (https://cloud.google.com/logging/docs/struct
 
 ## Installation
 ```
-composer require evaklp/monolog-stackdriver-handler
+composer require vivante-health/Monolog-Stackdriver-Handler
 ```
 
 ## Basic Usage
 ```php
 <?php
 
-use Klpeva\MonologStackdriverHandler\StackdriverHandler;
-
-$tag = [
-    sprintf(
-        'environment:%s',
-        'ci'
-    ),
-    sprintf(
-        'instance:%s',
-        'api'
-    )
-];
+use VivanteHealth\MonologStackdriverHandler\StackdriverHandler;
 
 $log = new Logger('name');
 $log->pushHandler(
@@ -32,4 +21,4 @@ $log->pushHandler(
 
 ## License
 
-Klpeva/monolog-stackdriver-handler is licensed under the MIT License - see the LICENSE file for details
+vivante-health/Monolog-Stackdriver-Handler is licensed under the MIT License - see the LICENSE file for details

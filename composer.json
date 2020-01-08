@@ -12,7 +12,7 @@
   "authors": [
     {
       "name": "Eva Koliopoulou",
-      "email": "eyaklp@gmail.com",
+      "email": "eyaklp@gmail.com"
     }
   ],
   "require": {
@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Nohponex\\StackdriverHandler\\": "src"
+      "vivante-health/Monolog-Stackdriver-Handler": "src"
     }
   },
   "scripts": {

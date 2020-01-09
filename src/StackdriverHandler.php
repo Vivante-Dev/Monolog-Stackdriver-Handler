@@ -57,6 +57,14 @@ class StackdriverHandler extends StreamHandler
                     }
                 )
             );
+            $record['extra']['tags'] = array_values(
+                array_filter(
+                    $record['extra']['tags'],
+                    function (string $tag): bool {
+                        return strpos($tag, 'instance:') !== 0;
+                    }
+                )
+            );
         }
 
         //Skip unsused information

@@ -1,12 +1,11 @@
 # monolog-stackdriver-handler
-Monolog Handler Structured Logging
-https://cloud.google.com/logging/docs/structured-logging
+Monolog Handler Structured Logging [https://cloud.google.com/logging/docs/structured-logging]
 
 This handler is `GOOGLE_CLOUD_PROJECT` agnostic.
  
 Extends `Monolog\Handler\StreamHandler` setting the formatter as `JsonFormatter` and adding `severity` field.
 
-Eliminating information so as to reduce chances of an entry being split in two, given the Stackdriver limits.
+Eliminating information so as to reduce chances of an entry being split in two, given the Stackdriver limits [https://cloud.google.com/logging/quotas]
 
 ## Installation
 ```

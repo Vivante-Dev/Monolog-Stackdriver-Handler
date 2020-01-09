@@ -1,5 +1,5 @@
 {
-  "name": "vivante-health/Monolog-Stackdriver-Handler",
+  "name": "vivante-health/monolog-stackdriver-handler",
   "description": "Stackdriver Handler based on Monolog StreamHandler",
   "type": "library",
   "keywords": [

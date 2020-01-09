@@ -3,7 +3,7 @@ Monolog Handler Structured Logging (https://cloud.google.com/logging/docs/struct
 
 ## Installation
 ```
-composer require vivante-health/Monolog-Stackdriver-Handler
+composer require vivante-health/monolog-stackdriver-handler
 ```
 
 ## Basic Usage
@@ -21,4 +21,4 @@ $log->pushHandler(
 
 ## License
 
-vivante-health/Monolog-Stackdriver-Handler is licensed under the MIT License - see the LICENSE file for details
+vivante-health/monolog-stackdriver-handler is licensed under the MIT License - see the LICENSE file for details

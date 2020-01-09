@@ -11,8 +11,7 @@ use Monolog\Logger;
  * Monolog Handler Structured Logging
  * @link https://cloud.google.com/logging/docs/structured-logging
  *
- * @author Eva Koliopoulou <eyaklp@gmail.com>
- * @since 0.0.0
+ * @author Eva Koliopoulou <ekoliopoulou@vivantehealth.com>
  */
 class StackdriverHandler extends StreamHandler
 {

@@ -53,7 +53,7 @@ class StackdriverHandler extends StreamHandler
                 array_filter(
                     $record['extra']['tags'],
                     function (string $tag): bool {
-                        return strpos($tag, 'environment:') !== 0 || strpos($tag, 'instance:') !== 0;
+                        return (strpos($tag, 'environment:') !== 0) && (strpos($tag, 'instance:') !== 0);
                     }
                 )
             );

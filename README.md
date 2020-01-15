@@ -3,9 +3,7 @@ Monolog Handler Structured Logging [https://cloud.google.com/logging/docs/struct
 
 This handler is `GCP_PROJECT` ID agnostic.
  
-Extends `Monolog\Handler\StreamHandler` setting the formatter as `JsonFormatter` and adding `severity` field.
-
-Eliminating information so as to reduce chances of an entry being split in two (both turned back to `textPayload` with `severity="INFO"`) given the syslog buffer size.
+Extends `Monolog\Handler\StreamHandler` setting the formatter to `JsonFormatter` and adding `severity` field, while eliminating unused information.
 
 ## Installation
 ```
